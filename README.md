@@ -2,15 +2,16 @@
 This script runs on (non-rooted) Android, in termux terminal, and logs mobile data IPv4/6 addresses along with date and location data.
 
 ## Requirements
-Install Termux, Termux-API Android package from F-droid (Not from play store as they are outdated)
+Install `Termux` and `Termux-API` Android packages from F-droid (Not from play store as they are outdated)
+
 [Termux apk](https://f-droid.org/en/packages/com.termux/)
+
 [Termux-API apk](https://f-droid.org/en/packages/com.termux.api/)
 
 Note, if Termux is installed through google play store then delete first. Otherwise Termux-API from F-droid will collide with it.
 
-Then, install termux-api pkg inside termux. 
-
-### Launch Termux from your phone and install
+### Install termux-api pkg inside termux. 
+Launch Termux from your phone, upgrade pacakge list and install `termux-api` package to have the required binaries
 ```
 pkg upgrade
 pkg install termux-api
@@ -23,7 +24,7 @@ termux-location
 ```
 It will ask for LOCATION permission first, so maybe you have to run it for the second time.
 
-## Run this IP address logger script
+## Run android_termux_ip_tracker
 First, install `git` in termux
 ```
 pkg install git
